@@ -1,0 +1,22 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "description": "The misadventures of hapless human Arthur Dent, his alien friend Ford Prefect, and the universe's best (and worst) travel guide, the Hitchhiker's Guide to the Galaxy.",
+      "coverImage": "https://images.gr-assets.com/books/1327656754l/11.jpg",
+      "read": false,
+      "rating": null
+    },
+    {
+      "id": 2,
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "description": "The tragic story of the mysterious millionaire Jay Gatsby, told by his friend and neighbor Nick Carraway.",
+      "coverImage": "https://images.gr-assets.com/books/1490528560l/4671.jpg",
+      "read": true,
+      "rating": 4
+    }
+  ]
+}
