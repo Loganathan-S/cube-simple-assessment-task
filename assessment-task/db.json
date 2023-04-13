@@ -28,13 +28,12 @@
       "rating": 4
     },
     {
-      "id": 4,
       "title": "1984",
       "author": "George Orwell",
       "description": "In a totalitarian society where independent thought is forbidden, a man named Winston Smith secretly rebels against the ruling party and falls in love with a fellow rebel named Julia.",
       "coverImage": "https://images.gr-assets.com/books/1532714506l/5470.jpg",
-      "read": false,
-      "rating": null
+      "rating": "4",
+      "id": 4
     }
   ]
 }

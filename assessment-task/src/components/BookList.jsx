@@ -12,6 +12,7 @@ function BookList() {
   const [description, setDescription] = useState("");
   const [coverImage, setCoverImage] = useState("");
   const [rating, setRating] = useState("");
+  const [bookId, setBookId] = useState("");
 
   const [showDiv, setShowDiv] = useState(false);
 
@@ -58,6 +59,8 @@ function BookList() {
   }
 
   const handleEdit = (e, bookId) => {
+
+    setBookId(bookId);
     console.log(bookId);
     axios
       .get(`http://localhost:3001/books/${bookId}`)
@@ -94,6 +97,8 @@ function BookList() {
       .then((response) => {
         // Handle success
         console.log("Book updated:", response.data);
+        setShowDiv(false);
+        setBookdetails(true);
         // onSave(response.data);
       })
       .catch((error) => {
@@ -137,6 +142,7 @@ function BookList() {
                       width={200}
                       height={200}
                     />
+                    <p>{book.rating}</p>
                     &nbsp;&nbsp;
                     <div className="mt-2">
                       <button
@@ -211,7 +217,7 @@ function BookList() {
                           type="submit"
                           variant="contained"
                           color="primary"
-                          onClick={handleSubmitChange}
+                          onClick={(e) => handleSubmitChange(e,bookId)}
                         >
                           Save Book
                         </Button>
